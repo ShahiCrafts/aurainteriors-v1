@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
-import { ArrowDown, Eye } from "lucide-react";
+import { ArrowDown, ArrowUpRightFromSquareIcon, Eye } from "lucide-react";
 import { AnimatedButton } from "./AnimatedButton";
 import { useRef } from "react";
 
@@ -39,10 +39,10 @@ export const HeroSection = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1592401526914-7e5d94a8d6fa?auto=format&fit=crop&w=1920&q=80')`,
+              backgroundImage: `url('https://images.unsplash.com/photo-1621431869071-934c835377af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032')`,
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
         </motion.div>
       </motion.div>
 
@@ -121,8 +121,8 @@ export const HeroSection = () => {
             <AnimatedButton
               onClick={openARModal}
               variant="outline"
-              icon={<Eye className="w-5 h-5" />}
-              className="border-white text-white hover:text-[#2A2A2A]"
+              icon={<ArrowUpRightFromSquareIcon className="w-5 h-5" />}
+              className="border-white text-white"
             >
               Try in AR
             </AnimatedButton>
